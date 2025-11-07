@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+<style>
+.container{
+  height: 800px;
+  background-image: url(img/background.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  width: 80%;
+  height: 400px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 2%, 20%);
+  color: white;
+  display: flex;
+  border-radius: 10%;
+}
+
+</style>
+</head>
+
+<body>>
+  <div class="container">
+  <div class="content">
+  <div id="app">
+
+    <div id="play">
+      <h2>Choose</h2>
+      <button data-choice="rock">Rock</button>
+      <button data-choice="paper">Paper</button>
+      <button data-choice="scissors">Scissors</button>
+
+      <div id="roundResult" aria-live="polite" style="margin-top:12px;"></div>
+    </div>
+
+    <aside id="sidebar">
+      <div id="score">Score: You - 0, Computer - 0</div>
+      <ol id="history" style="margin-top:10px;"></ol>
+      <button id="reset" style="margin-top:8px;">Reset</button>
+    </aside>
+  </div>
+</div>
+</div>
+
+   <script src="index.js"></script>
+
+
+</body>
+</html>
